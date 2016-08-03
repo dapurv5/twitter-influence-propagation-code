@@ -4,10 +4,7 @@ Code to generate dataset used in the twitter [influence propagation work](http:/
 
 ```
 @article{DBLP:journals/corr/LiXFS16,
-    author    = {Shuang Li and
-        Yao Xie and
-            Mehrdad Farajtabar and
-            Le Song},
+    author    = {Shuang Li and Yao Xie and Mehrdad Farajtabar and Le Song},
     title     = {Detecting weak changes in dynamic events over networks},
     journal   = {CoRR},
     volume    = {abs/1603.08981},
@@ -38,3 +35,6 @@ python get_tweets.py --handle FLOTUS --followers_file followers/FLOTUS.txt --twe
 ```
 python postprocessing.py --leader_handle NASA --tweets_file tweets/NASA.txt --output tweets_processed/NASA.txt
 ```
+
+
+This version only supports collecting data from the network in a star-topology. (One leader multiple followers). This work was further extended by [Tristan Gurtler](https://github.com/tristangurtler/twitter-influence-propagation-code) which supports collecting data from a generic topology. The full dataset prepared for ~75 users can be found at [Influence Propagation Dataset (Star)](https://github.com/dapurv5/twitter-influence-propagation-dataset)
