@@ -19,7 +19,10 @@ def get_uid_for_handle(handle, leader_handle):
   global curr_uid
   global handle_to_uid
   if handle == "-1":
-    return -1
+    return 0
+  #If its already in int id format, don't need to do anything.
+  if handle.isdigit():
+    return handle
   if handle == leader_handle:
     return 1
   if handle in handle_to_uid:

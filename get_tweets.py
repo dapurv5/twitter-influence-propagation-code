@@ -11,11 +11,6 @@ from twython import Twython
 from twython.exceptions import TwythonError
 from twython.exceptions import TwythonAuthError
 from twython.exceptions import TwythonRateLimitError
-"""
-AndrewYNg
-BillGates
-FLOTUS 20160114 20160122  #Michelle Obama's birthday on January 18th
-"""
 
 twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
 
